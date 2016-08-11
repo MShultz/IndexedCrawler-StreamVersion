@@ -30,7 +30,7 @@ public class WebTraversal {
 			visit.getURL(currentPageURL);
 			finder.processPage(createInputStream(currentPage));
 			addToHasVisited(currentPage);
-			addToFoundList(formatter.formatLinks(finder.getLinks(), currentPageURL));
+			addToFoundList(formatter.formatLinks(finder.getLinks().iterator(), currentPageURL));
 		} while (visitedPages.size() < maxVisits && !visitedEqualsFound());
 		visit.closeIndex();
 	}

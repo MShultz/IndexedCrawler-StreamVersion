@@ -5,7 +5,7 @@ public class Main {
 		//Traverses Web
 		String fileName = "../Index Search/src/Indexed.bin";
 		WordIndex.initialize(fileName, 30);
-		WebTraversal crawl = new WebTraversal("http://shalladay-IIs1.neumont.edu", 10);
+		WebTraversal crawl = new WebTraversal("https://www.neumont.edu", 10);
 		crawl.traverseWeb();
 	}
 }
